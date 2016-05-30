@@ -43,10 +43,9 @@ public class TestSalariu extends TestCase {
 	public void testSetSalariuDrepturiDeplineValNegative(){
 		try {
 			ang2.setSalariu(-2000);
-			fail("Salariu negativ pt ang cu drepturi depline");
+			fail("Metoda nu arunca exceptii pe valori negative ale salariului!");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			
 		}
 		
 	}
