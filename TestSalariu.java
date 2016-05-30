@@ -49,5 +49,16 @@ public class TestSalariu extends TestCase {
 		}
 		
 	}
+	
+	
+	public void testSetSalariuZero(){
+		try {
+			ang2.setSalariu(0);
+			fail("metoda nu arunca exceptii pe valori nule ale salariului");
+		} catch (Exception e) {
+			
+		}
+		
+	}
 
 }
