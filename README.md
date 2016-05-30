@@ -1,2 +1,0 @@
-# cts
-Proiect CTS
