@@ -17,15 +17,16 @@ public class TestSetDataAngajare extends TestCase {
 		super(name);
 	}
 
-	protected void setUp()  {
+	//trebuie
+	protected void setUp() throws Exception {
 		try {
 			
 			String stringDataNas1 = "1990-01-18";
 			Date dataNas1 = new SimpleDateFormat("yyyy-MM-dd").parse(stringDataNas1);
-			angD=new BuilderAngajatDrepturiDepline(2700, 1).setDataAngajare(new Date()).setDataNastere(dataNas1).setNume(" ").setProba().build();
+			angD=new BuilderAngajatDrepturiDepline(2700, 1).setDataNastere(dataNas1).setDataAngajare(new Date()).setNume(" ").setProba().build();
 			super.setUp();
 		} catch (Exception e) {
-		
+		e.printStackTrace();
 		}
 		
 	}
